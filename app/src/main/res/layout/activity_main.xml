@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="526dp"
+        android:layout_height="27dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="89dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginBottom="250dp"
+            android:text="Diario enemigo"
+            android:textColor="@color/blue"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="52dp"
+            android:hint="Nombre"
+            android:textColorHint="@color/cyan"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/edad"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="143dp"
+            android:hint="Edad"
+            android:textColorHint="@color/cyan"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/ofensa"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="220dp"
+            android:hint="descripción de la ofensa"
+            android:textColorHint="@color/cyan"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/boton_validar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/red"
+        android:onClick="Añadir"
+        android:text="Añadir"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>
